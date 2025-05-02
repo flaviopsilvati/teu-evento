@@ -1,0 +1,1 @@
+export const newId = (prefix: string) => `${prefix}-${new Date().getTime()}`

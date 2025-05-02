@@ -1,0 +1,19 @@
+{
+  "name": "teu-evento",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@nestjs/common": "11.1.0",
+    "@nestjs/cqrs": "11.0.3"
+  }
+}
