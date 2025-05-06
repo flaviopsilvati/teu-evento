@@ -1,13 +1,15 @@
-import {Artista} from "./artista.entity";
+import { Artista } from "./artista.entity";
+import { ILineUp } from "./interfaces/lineup.interface";
+import { IArtista } from "./interfaces/artista.interface";
 
-export class LineUp {
-    constructor(private readonly artistas: Artista[]) {
-        if (artistas.length === 0) {
-            throw new Error('LineUp deve ter pelo menos um artista');
-        }
+export class LineUp implements ILineUp {
+  constructor(private readonly artistas: Artista[]) {
+    if (artistas.length === 0) {
+      throw new Error("LineUp deve ter pelo menos um artista");
     }
+  }
 
-    getArtistas(): Artista[] {
-        return [...this.artistas];
-    }
+  getArtistas(): IArtista[] {
+    return [...this.artistas];
+  }
 }
